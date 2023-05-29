@@ -10,17 +10,35 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
-.page-title {
+main {
   position: relative;
 }
 
-.page-title h1 {
+.header {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 70%);
+}
+
+.header h1 {
   font-size: 100px;
   font-weight: 500;
   font-style: italic;
-  writing-mode: vertical-rl;
+}
+
+.social-media-icons {
+  font-size: 70px;
+  position: relative;
+  top: -60px;
+  left: 100px;
+  cursor: pointer;
+}
+
+.social-media-icons i {
+  transition: transform 0.5s ease;
+}
+
+.social-media-icons i:hover {
+  transform: scale(1.1);
 }

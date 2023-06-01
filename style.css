@@ -21,23 +21,48 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, 70%);
+  width: 100vw;
 }
 
 .header h1 {
   font-size: 100px;
   font-weight: 500;
   font-style: italic;
+  animation-name: focus-in-contract;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  text-align: center;
+    
+  /* shorthand
+  animation: focus-in-contract 1s linear 0s 1 normal none;*/
+}
+
+@keyframes focus-in-contract {			
+  0% {
+    letter-spacing:1em;
+    filter:blur(12px);
+    opacity:0;
+  }
+  100% {
+    filter:blur(0);
+    opacity:1;
+  }
 }
 
 .social-media-icons {
   font-size: 70px;
   position: relative;
   top: -60px;
-  left: 100px;
   cursor: pointer;
+  text-align: center;
 }
 
 .social-media-icons i {
+  animation: focus-in-contract 3s linear 0s 1 normal none;
   transition: transform 0.5s ease;
 }
 

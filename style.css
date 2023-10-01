@@ -43,13 +43,13 @@ main {
 
 @keyframes focus-in-contract {			
   0% {
-    letter-spacing:1em;
-    filter:blur(12px);
-    opacity:0;
+    letter-spacing: 100px;
+    filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    filter:blur(0);
-    opacity:1;
+    filter: blur(0);
+    opacity: 1;
   }
 }
 
@@ -75,8 +75,5 @@ main {
   position: absolute;
   top: calc(100vh - 50px);
   width: 100%;
-}
-
-.footer p {
   text-align: center;
 }

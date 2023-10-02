@@ -31,23 +31,17 @@ main {
   animation-name: focus-in-contract;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
   text-align: center;
-    
-  /* shorthand
-  animation: focus-in-contract 1s linear 0s 1 normal none;*/
 }
 
 @keyframes focus-in-contract {			
   0% {
-    letter-spacing: 100px;
+    letter-spacing: 1em;
     filter: blur(12px);
     opacity: 0;
   }
   100% {
+    letter-spacing: 0;
     filter: blur(0);
     opacity: 1;
   }
@@ -62,7 +56,7 @@ main {
 }
 
 .social-media-icons i {
-  animation: focus-in-contract 3s linear 0s 1 normal none;
+  animation: focus-in-contract 3s linear;
   transition: transform 0.5s ease;
 }
 
